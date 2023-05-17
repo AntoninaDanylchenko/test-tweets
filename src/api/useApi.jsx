@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import { toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
-const useMovieSearchHook = (apiFunction, id) => {
+const useUsersApi = (apiFunction, id) => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -24,4 +24,4 @@ const useMovieSearchHook = (apiFunction, id) => {
   return { users, error, isLoading };
 };
 
-export default useMovieSearchHook;
+export default useUsersApi;
