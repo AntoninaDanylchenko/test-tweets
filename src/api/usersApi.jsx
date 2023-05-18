@@ -7,12 +7,6 @@ export const getAllUsers = async () => {
   return await axios.get(`${API_BACKEND}`).then((r) => r.data);
 };
 
-// export const getMoviesById = async (id) => {
-//   return await axios.get(`${API_BACKEND}/${id}`).then((r) => r.data);
-// };
-
-// export const findMoviesActors = async (id) => {
-//   return await axios
-//     .get(`${API_BACKEND}movie/${id}/credits?api_key=${API_KEY}&language=en-US`)
-//     .then((r) => r.data.cast);
-// };
+export const getMoviesById = async (id, user) => {
+  return await axios.patch(`${API_BACKEND}/${id}`, user).then((r) => r.data);
+};

@@ -1,17 +1,29 @@
 /* eslint-disable react/prop-types */
 
-import { TweetItem } from "./Tweet.styled";
+import {
+  LinearSpan,
+  StyledAvatarImg,
+  StyledBtnFollow,
+  StyledText,
+  TweetItem,
+} from "./Tweet.styled";
 
 // eslint-disable-next-line react/prop-types
 const Tweet = ({ user }) => {
+  const onChangeFollowers = () => {};
+  const btnText = user.isFollowing ? "FOLLOWING" : "FOLLOW";
   return (
     <TweetItem>
-      <img src={user.avatar} />
+      <LinearSpan></LinearSpan>
 
-      <p>{user.tweets} TWEETS</p>
-      <p>{user.followers} FOLLOWERS</p>
+      <StyledAvatarImg src={user.avatar} width="80px" />
 
-      <button type="button">FOLLOW</button>
+      <StyledText>{user.tweets} TWEETS</StyledText>
+      <StyledText>{user.followers} FOLLOWERS</StyledText>
+
+      <StyledBtnFollow type="button" onClick={onChangeFollowers()}>
+        {btnText}
+      </StyledBtnFollow>
     </TweetItem>
   );
 };

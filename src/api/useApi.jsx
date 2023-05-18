@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import { toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
-const useUsersApi = (apiFunction, id) => {
+const useUsersApi = (apiFunction, id, data) => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -11,7 +11,7 @@ const useUsersApi = (apiFunction, id) => {
     async function fetchToSearch() {
       try {
         setIsLoading(true);
-        const r = await apiFunction(id);
+        const r = await apiFunction(id, data);
         setUsers(r);
       } catch (error) {
         setError(error.message);
@@ -20,7 +20,7 @@ const useUsersApi = (apiFunction, id) => {
       }
     }
     fetchToSearch();
-  }, [apiFunction, id]);
+  }, [apiFunction, id, data]);
   return { users, error, isLoading };
 };
 

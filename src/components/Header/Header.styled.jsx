@@ -5,9 +5,7 @@ export const HeaderStyled = styled.header`
   left: 0;
   position: sticky;
   z-index: 1; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   min-height: 64px;
   padding-right: 24px;
   padding-left: 24px;
@@ -24,4 +22,10 @@ export const HeaderStyled = styled.header`
   );
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
