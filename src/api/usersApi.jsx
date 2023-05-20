@@ -7,6 +7,6 @@ export const getAllUsers = async () => {
   return await axios.get(`${API_BACKEND}`).then((r) => r.data);
 };
 
-export const getMoviesById = async (id, user) => {
-  return await axios.patch(`${API_BACKEND}/${id}`, user).then((r) => r.data);
+export const patchUserById = async (id, user) => {
+  return await axios.put(`${API_BACKEND}/${id}`, user).then((r) => r.data);
 };
