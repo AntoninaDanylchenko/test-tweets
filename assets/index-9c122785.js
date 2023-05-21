@@ -80,7 +80,7 @@ Error generating stack: `+i.message+`
   }
 `,Wy=G.ul`
   display: flex;
-`,Hy=()=>T.jsx("nav",{children:T.jsxs(Wy,{children:[T.jsx("li",{children:T.jsx(Ya,{to:"/home",children:"Home"})}),T.jsx("li",{children:T.jsx(Ya,{to:"/tweets",children:"Tweets"})})]})}),Vy=G.header`
+`,Hy=()=>T.jsx("nav",{children:T.jsxs(Wy,{children:[T.jsx("li",{children:T.jsx(Ya,{to:"/",children:"Home"})}),T.jsx("li",{children:T.jsx(Ya,{to:"/tweets",children:"Tweets"})})]})}),Vy=G.header`
   min-height: 64px;
   padding-right: 24px;
   padding-left: 24px;
