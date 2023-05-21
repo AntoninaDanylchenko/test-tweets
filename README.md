@@ -19,3 +19,5 @@ https://antoninadanylchenko.github.io/test-tweets/
 
 Створи свій персональний бекенд для розробки за допомогою UI-сервісу
 mockapi.io.
+
+Макет - https://www.figma.com/file/l6Kp41Me5Uq02ASR7XsEY0/Test-(Copy)?type=design&node-id=7-89&t=fY2gQAC2LwpSg3Zj-0
