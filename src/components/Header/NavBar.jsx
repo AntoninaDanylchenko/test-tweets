@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav>
       <StyledNavList>
         <li>
-          <NavLinkStyled to="/home">Home</NavLinkStyled>
+          <NavLinkStyled to="/">Home</NavLinkStyled>
         </li>
         <li>
           <NavLinkStyled to="/tweets">Tweets</NavLinkStyled>
