@@ -5,6 +5,8 @@ import backPicturex2 from "../../images/backPicturex2.png";
 
 export const TweetItem = styled.li`
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   width: 380px;
   height: 460px;
@@ -23,6 +25,12 @@ export const TweetItem = styled.li`
     background: url(${backPicturex2}),
       linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
   }
+`;
+
+export const MinLogo = styled.img`
+  position: absolute;
+  top: 20px;
+  left: 20px;
 `;
 
 export const LinearSpan = styled.span`
@@ -98,6 +106,7 @@ export const StyledBtnFollow = styled.button`
   color: #373737;
 
   &:hover {
-    background: #d8f7ff;
+    transform: scale(0.9);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 `;

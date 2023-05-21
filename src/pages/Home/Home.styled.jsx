@@ -1,14 +1,31 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
-export const LoadMoreBtn = styled.button`
+export const HomeSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const HomeText = styled.p`
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.17;
+  color: #471ca9;
+
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+export const HomeLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 28px;
+  padding: 14px 24px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   width: 196px;
   height: 50px;

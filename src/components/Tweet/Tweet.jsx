@@ -7,7 +7,9 @@ import {
   StyledBtnFollow,
   StyledText,
   TweetItem,
+  MinLogo,
 } from "./Tweet.styled";
+import logo from "../../images/Logo.png";
 import wrapper from "../../helpers/wrapper";
 
 // eslint-disable-next-line react/prop-types
@@ -35,11 +37,12 @@ const Tweet = ({ user }) => {
   const btnText = isFollowing ? "FOLLOWING" : "FOLLOW";
   return (
     <TweetItem>
+      <MinLogo src={logo} alt="logo goit" width="76px" />
       <LinearSpan></LinearSpan>
 
       <StyledAvatarImg src={user.avatar} width="80px" alt={user.userName} />
-      <StyledText>{user.tweets} TWEETS</StyledText>
-      <StyledText>{followers} FOLLOWERS</StyledText>
+      <StyledText>{user.tweets.toLocaleString("en-US")} TWEETS</StyledText>
+      <StyledText>{followers.toLocaleString("en-US")} FOLLOWERS</StyledText>
 
       <StyledBtnFollow
         type="button"

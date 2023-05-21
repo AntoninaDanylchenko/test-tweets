@@ -1,7 +1,7 @@
 import Tweet from "../../components/Tweet/Tweet";
 import PropTypes from "prop-types";
 import { StyledTweetsList } from "./TweetsList.styled";
-import { Container } from "../Styles.styled";
+
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -12,12 +12,10 @@ const TweetsList = ({ users, page }) => {
     setPaginUser((prev) => [...prev, ...threeUsers]);
   }, [page, users]);
   return (
-    <Container>
-      <StyledTweetsList>
-        {paginUser.length > 0 &&
-          paginUser.map((user) => <Tweet key={user.id} user={user} />)}
-      </StyledTweetsList>
-    </Container>
+    <StyledTweetsList>
+      {paginUser.length > 0 &&
+        paginUser.map((user) => <Tweet key={user.id} user={user} />)}
+    </StyledTweetsList>
   );
 };
 

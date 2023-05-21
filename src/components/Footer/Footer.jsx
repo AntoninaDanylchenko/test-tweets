@@ -1,11 +1,10 @@
-const Footer = () => {
-  // const [count, setCount] = useState(0);
+import { StyledFooter, FooterText } from "./Footer.styled";
 
+const Footer = () => {
   return (
-    <footer>
-      <hr />
-      <div>Footer</div>
-    </footer>
+    <StyledFooter>
+      <FooterText>© 2023 Antonina Danylchenko. Test.</FooterText>
+    </StyledFooter>
   );
 };
 

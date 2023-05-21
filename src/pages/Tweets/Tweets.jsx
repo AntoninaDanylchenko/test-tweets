@@ -4,6 +4,7 @@ import { getAllUsers } from "../../api/usersApi";
 import Loader from "../../components/Loader/Loader";
 import LoadMore from "../../components/LoadMore/LoadMore";
 import TweetsList from "../../components/TweetsList/TweetsList";
+import { HomeLink } from "../Home/Home.styled";
 
 const Tweets = () => {
   const usersArr = useUsersApi(getAllUsers);
@@ -22,6 +23,7 @@ const Tweets = () => {
         <Loader />
       ) : (
         <>
+          <HomeLink to="/">Go back</HomeLink>
           <TweetsList users={result} page={page} />
           <LoadMore onClick={loadMore} />
         </>

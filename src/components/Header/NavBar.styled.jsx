@@ -5,16 +5,15 @@ export const NavLinkStyled = styled(NavLink)`
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
-  color: #ebd8ff;
+  color: #c3a7e1;
   font-weight: 500;
 
   &.active {
-    color: #471ca9;
-    background-color: #ebd8ff;
+    color: #5cd3a8;
   }
   &:hover:not(.active),
   &:focus:not(.active) {
-    color: #ffffff;
+    color: #5cd3a8;
   }
 `;
 
